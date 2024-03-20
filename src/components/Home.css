@@ -1,0 +1,130 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #FFF5E4;
+  /* Set a gradient background color for the entire page */
+  height: 100vh;
+  /* Set the body height to take up the full height of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  text-align: center;
+  /* Center text within App */
+  width: 100%;
+  /* Take up the full width of the viewport */
+  height: 100%;
+  /* Take up the full height of the viewport */
+  border-radius: 0.5px;
+  /* Adjust the radius to your desired value */
+  overflow: hidden;
+  /* Ensures the content does not overflow outside the rounded corners */
+
+  /* Apply 3D effect */
+  transform-style: preserve-3d;
+  /* This property ensures that children elements are rendered in 3D space */
+  perspective: 1000px;
+  /* Defines the perspective from which all child elements are viewed */
+}
+
+/* Example: Apply 3D transformation to a child element */
+.App .child-element {
+  /* transform: rotateY(45deg); */
+  /* Rotate the element around the Y-axis */
+  /* transform-origin: center; */
+  /* Set the origin point for the rotation */
+}
+
+.main-container {
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+
+/* Add this to your CSS file */
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Display buttons in a vertical column */
+  gap: 16px;
+  margin: 16px;
+  /* Add spacing between buttons */
+}
+
+input[type="text"] {
+  padding: 15px 20px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.action-btn {
+  margin-left: 16px;
+  background: #DF7474;
+  color: #FFFFFF;
+}
+
+.action-btn:hover {
+  color: #000000;
+}
+
+.action-description {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Update the button styling */
+button {
+  padding: 15px 20px;
+  font-size: 24px;
+  background-color: #FFD1D1;
+  border: none;
+  border-radius: 5px;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.50s;
+  /* Add margin to create space between buttons */
+}
+
+button:hover {
+  background-color: #FF9494;
+  transform: scale(1.05);
+}
+
+.text-input-container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  padding: 15px 20px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+  height: 150px; /* Set the height for a paragraph */
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+/* Additional styling if needed */
+
+
